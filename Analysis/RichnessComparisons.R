@@ -4,9 +4,10 @@ library("readxl")
 library("dplyr")
 library("data.table")
 library("car")
+library("ggridges")
 
 #Creating Reference Subset
-ReferenceRichness <- read.csv("~/UBC/Thesis/Field Work/DATA/ReferenceMarsh_AUG2019.csv")
+ReferenceRichness <- read.csv("~/Git/TyphaData/FieldData/ReferenceMarsh_AUG2019.csv")
 
 #Removing Exotics
 ReferenceNatives <- filter(ReferenceRichness,ORIGIN == "native")
@@ -20,7 +21,7 @@ Box1 <-  boxplot(ReferenceNativeRichness$n, data=n)
 ReferenceNativeRichness$LOCATION<- "Reference"
 
 #Creating Frenchies In Subset
-FrenchiesIn_Richness <- read.csv("~/UBC/Thesis/Field Work/DATA/Frenchies_IN.csv")
+FrenchiesIn_Richness <- read.csv("~/Git/TyphaData/FieldData/Frenchies_IN.csv")
 
 #Removing Exotics
 FrenchiesIn_Natives <- filter(FrenchiesIn_Richness,ORIGIN == "native")
@@ -37,7 +38,7 @@ FrenchiesINNativeRichness$LOCATION  <- "Frenchies Inside"
 
 
 #Creating Frenchies Out Subset
-FrenchiesOut_Richness <- read.csv("~/UBC/Thesis/Field Work/DATA/Frenchies_OUT.csv")
+FrenchiesOut_Richness <- read.csv("~/Git/TyphaData/FieldData/Frenchies_OUT.csv")
 
 #Removing Exotics
 FrenchiesOut_Natives <- filter(FrenchiesOut_Richness,ORIGIN == "native")
@@ -56,14 +57,13 @@ FrenchiesOutNativeRichness$LOCATION  <- "Frenchies Outside"
 Combined <- rbind(ReferenceNativeRichness,FrenchiesOutNativeRichness,FrenchiesINNativeRichness)
 
 RichnessBox <- ggplot(data = Combined, aes(x=LOCATION, y=n))+  
-  geom_boxplot () +
+  geom_density_ridges () +
   theme_bw() +
   theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank()) +
   labs(x = "Location", y = "Species Richness") 
 
 RichnessBox <-  boxplot(Combined$n, Combined$LOCATION)
 RichnessBox
-
 
 
 
