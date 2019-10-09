@@ -57,19 +57,32 @@ FrenchiesOutNativeRichness$LOCATION  <- "Frenchies Outside"
 Combined <- rbind(ReferenceNativeRichness,FrenchiesOutNativeRichness,FrenchiesINNativeRichness)
 
 RichnessBox <- ggplot(data = Combined, aes(x=LOCATION, y=n))+  
-  geom_density_ridges () +
+  geom_boxplot() +
   theme_bw() +
   theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank()) +
-  labs(x = "Location", y = "Species Richness") 
+  labs(x = "", y = "Species Richness") 
 
-RichnessBox <-  boxplot(Combined$n, Combined$LOCATION)
 RichnessBox
 
+#Ridge Plot Creation
+RichnessRidge <- ggplot(data = Combined, aes(n, LOCATION)) + #note that switching the axis values fixes the y-value issue with ridgeplot
+  ggridges::geom_density_ridges() +
+  labs(x = "Species Richness", y = "") +
+  theme_bw() +
+  theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank())
+  RichnessRidge
 
-
+#Jitter Plot Creation
+RichnessJitter <- ggplot(data = Combined, aes(LOCATION, n)) +
+    geom_jitter(aes(colour = LOCATION)) +
+    theme_bw() +
+    ylab("Species Richness")+
+    xlab ("") + 
+    theme(legend.title = element_blank()) +
+    theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank()) 
+  RichnessJitter
+  
+  
 library(reshape2)
 BoxplotDF <- melt(Combined, id.var="LOCATION")
-
-
-ReferenceNativeRichness$n <- "Reference"
 
