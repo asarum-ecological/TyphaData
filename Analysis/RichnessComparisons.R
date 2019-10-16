@@ -36,7 +36,6 @@ Box2 <-  boxplot(FrenchiesINNativeRichness$n, data=n)
 FrenchiesINNativeRichness$LOCATION  <- "Frenchies Inside"
 
 
-
 #Creating Frenchies Out Subset
 FrenchiesOut_Richness <- read.csv("~/Git/TyphaData/FieldData/Frenchies_OUT.csv")
 
@@ -54,20 +53,19 @@ FrenchiesOutNativeRichness$LOCATION  <- "Frenchies Outside"
 
 #Box Plot Creation
 
-Combined <- rbind(ReferenceNativeRichness,FrenchiesOutNativeRichness,FrenchiesINNativeRichness)
 
 RichnessBox <- ggplot(data = Combined, aes(x=LOCATION, y=n))+  
   geom_boxplot() +
   theme_bw() +
   theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank()) +
-  labs(x = "", y = "Species Richness") 
+  labs(x = "", y = "Native Species Richness") 
 
 RichnessBox
 
 #Ridge Plot Creation
 RichnessRidge <- ggplot(data = Combined, aes(n, LOCATION)) + #note that switching the axis values fixes the y-value issue with ridgeplot
   ggridges::geom_density_ridges() +
-  labs(x = "Species Richness", y = "") +
+  labs(x = "Native Species Richness", y = "") +
   theme_bw() +
   theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank())
   RichnessRidge
@@ -76,7 +74,7 @@ RichnessRidge <- ggplot(data = Combined, aes(n, LOCATION)) + #note that switchin
 RichnessJitter <- ggplot(data = Combined, aes(LOCATION, n)) +
     geom_jitter(aes(colour = LOCATION)) +
     theme_bw() +
-    ylab("Species Richness")+
+    ylab("Native Species Richness")+
     xlab ("") + 
     theme(legend.title = element_blank()) +
     theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank()) 

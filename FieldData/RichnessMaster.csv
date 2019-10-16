@@ -1,0 +1,137 @@
+ID,PLOT,RICHNESS,LOCATION
+1,1-A1,0,Frenchies Outside
+2,1-A2,0,Frenchies Outside
+3,1-A3,0,Frenchies Outside
+4,1-B1,1,Frenchies Outside
+5,1-B2,1,Frenchies Outside
+6,1-B3,0,Frenchies Outside
+7,1-C1,0,Frenchies Outside
+8,1-C2,0,Frenchies Outside
+9,1-C3,0,Frenchies Outside
+10,2-A1,2,Frenchies Outside
+11,2-A2,1,Frenchies Outside
+12,2-A3,0,Frenchies Outside
+13,2-B1,0,Frenchies Outside
+14,2-B2,0,Frenchies Outside
+15,2-B3,0,Frenchies Outside
+16,2-C1,1,Frenchies Outside
+17,2-C2,0,Frenchies Outside
+18,2-C3,1,Frenchies Outside
+19,3-A1,1,Frenchies Outside
+20,3-A2,0,Frenchies Outside
+21,3-A3,0,Frenchies Outside
+22,3-B1,0,Frenchies Outside
+23,3-B2,4,Frenchies Outside
+24,3-B3,3,Frenchies Outside
+25,3-C1,4,Frenchies Outside
+26,3-C2,1,Frenchies Outside
+27,3-C3,0,Frenchies Outside
+1,1-01A,3,Frenchies Inside
+2,1-01B,2,Frenchies Inside
+3,1-02A,1,Frenchies Inside
+4,1-02B,1,Frenchies Inside
+5,1-03A,3,Frenchies Inside
+6,1-03B,4,Frenchies Inside
+7,1-04A,0,Frenchies Inside
+8,1-04B,0,Frenchies Inside
+9,2-01A,0,Frenchies Inside
+10,2-01B,1,Frenchies Inside
+11,2-02A,1,Frenchies Inside
+12,2-02B,1,Frenchies Inside
+13,2-03A,4,Frenchies Inside
+14,2-03B,3,Frenchies Inside
+15,2-04A,0,Frenchies Inside
+16,2-04B,0,Frenchies Inside
+17,3-01A,0,Frenchies Inside
+18,3-01B,1,Frenchies Inside
+19,3-02A,0,Frenchies Inside
+20,3-02B,0,Frenchies Inside
+21,3-03A,1,Frenchies Inside
+22,3-03B,1,Frenchies Inside
+23,3-04A,0,Frenchies Inside
+24,3-04B,0,Frenchies Inside
+25,4-01A,0,Frenchies Inside
+26,4-01B,0,Frenchies Inside
+27,4-02A,2,Frenchies Inside
+28,4-02B,0,Frenchies Inside
+29,4-03A,0,Frenchies Inside
+30,4-03B,0,Frenchies Inside
+31,4-04A,4,Frenchies Inside
+32,4-04B,1,Frenchies Inside
+33,5-01A,2,Frenchies Inside
+34,5-01B,1,Frenchies Inside
+35,5-02A,0,Frenchies Inside
+36,5-02B,0,Frenchies Inside
+37,5-03A,1,Frenchies Inside
+38,5-03B,3,Frenchies Inside
+39,5-04A,2,Frenchies Inside
+40,5-04B,1,Frenchies Inside
+41,6-01A,2,Frenchies Inside
+42,6-01B,2,Frenchies Inside
+43,6-02A,2,Frenchies Inside
+44,6-02B,3,Frenchies Inside
+45,6-03A,1,Frenchies Inside
+46,6-03B,0,Frenchies Inside
+47,6-04A,1,Frenchies Inside
+48,6-04B,0,Frenchies Inside
+49,7-01A,1,Frenchies Inside
+50,7-01B,1,Frenchies Inside
+51,7-02A,2,Frenchies Inside
+52,7-02B,1,Frenchies Inside
+53,7-03A,0,Frenchies Inside
+54,7-03B,0,Frenchies Inside
+55,7-04A,1,Frenchies Inside
+56,7-04B,0,Frenchies Inside
+57,8-01A,1,Frenchies Inside
+58,8-01B,1,Frenchies Inside
+59,8-02A,0,Frenchies Inside
+60,8-02B,2,Frenchies Inside
+61,8-03A,2,Frenchies Inside
+62,8-03B,3,Frenchies Inside
+63,8-04A,0,Frenchies Inside
+64,8-04B,3,Frenchies Inside
+65,9-01A,0,Frenchies Inside
+66,9-01B,0,Frenchies Inside
+67,9-02A,0,Frenchies Inside
+68,9-02B,1,Frenchies Inside
+69,9-03A,0,Frenchies Inside
+70,9-03B,0,Frenchies Inside
+71,9-04A,1,Frenchies Inside
+72,9-04B,2,Frenchies Inside
+1,2-Nov,6,Reference
+2,3-Nov,4,Reference
+3,4-Nov,9,Reference
+4,5-Nov,6,Reference
+5,1-Feb,5,Reference
+6,2-Feb,10,Reference
+7,3-Feb,10,Reference
+8,4-Feb,14,Reference
+9,5-Feb,9,Reference
+10,6-Feb,8,Reference
+11,7-Feb,8,Reference
+12,8-Feb,9,Reference
+13,1-Apr,6,Reference
+14,2-Apr,5,Reference
+15,3-Apr,10,Reference
+16,4-Apr,8,Reference
+17,5-Apr,6,Reference
+18,6-Apr,7,Reference
+19,7-Apr,6,Reference
+20,8-Apr,2,Reference
+21,1-May,8,Reference
+22,2-May,6,Reference
+23,3-May,8,Reference
+24,4-May,10,Reference
+25,5-May,6,Reference
+26,6-May,4,Reference
+27,7-May,4,Reference
+28,1-Jun,5,Reference
+29,2-Jun,8,Reference
+30,3-Jun,8,Reference
+31,4-Jun,8,Reference
+32,5-Jun,8,Reference
+33,1-Jul,4,Reference
+34,2-Jul,6,Reference
+35,3-Jul,6,Reference
+36,4-Jul,7,Reference
+37,5-Jul,3,Reference
